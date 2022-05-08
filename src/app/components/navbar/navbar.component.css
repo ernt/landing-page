@@ -1,0 +1,40 @@
+
+.offcanvas-end{
+    width: 420px;
+}
+.offcanvas{
+    background-color:transparent;
+}
+
+header {
+    background-image: url("/assets/head.jpg") ;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-repeat:no-repeat;
+    height: 600px;
+    position: relative;
+ 
+    
+}
+
+.title {
+    color: #ffff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo{
+    width: 120px;
+
+}
+.btn {
+    border-radius:40px;
+}
+.btn-head {
+    border-radius:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:black;
+}

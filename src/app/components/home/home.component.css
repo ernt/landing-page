@@ -1,0 +1,21 @@
+
+
+.bg-gray{
+    background-color:#101010;
+}
+.container-top{
+    padding-top: 50px;
+}
+.container-bot{
+    padding-bottom: 50px;
+}
+.img-ham{
+    width: 30%;
+    height: 30%;
+}
+.btn-part{
+    border-radius:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
