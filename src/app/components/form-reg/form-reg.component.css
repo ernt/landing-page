@@ -7,7 +7,7 @@
 }
 
 header {
-    background-image: url("/assets/head.jpg") ;
+    background-color: black;
     background-size: 100% 100%;
     background-attachment: scroll;
     background-repeat:no-repeat;
@@ -20,7 +20,7 @@ header {
 .title {
     color: #ffff;
     font-size: 20px;
-    position: absolute;
+    
     top: 50%;
     transform: translateY(-50%);
 }

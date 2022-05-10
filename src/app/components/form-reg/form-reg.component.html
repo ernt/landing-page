@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<header>
+
+</header>
+<div class="container bg-black">
+  <div class="title font-weight-bold">
+    <div class="container bg-black">
+      <form [formGroup]="form"  >
+        <div class="mb-3 error" >
+         
+            <input type="text" placeholder="Username" class="form-control" formControlName="username" required>
+    
+        </div>
+    
+        <div *ngIf="form.get('username')?.invalid && (form.get('username')?.dirty || form.get('username')?.touched)">
+            <div *ngIf="form.get('username')?.hasError('required')">
+               <p class="text-red"> Username is required</p>
+            </div>
+            <div *ngIf="form.get('username')?.hasError('minlength')">
+                <p class="text-red"> Username must be 8 characters</p>
+            </div>
+            </div>
+    
+            
+            <div class="mb-3 error" >
+         
+              <input type="email" class="form-control" formControlName="email" id="exampleFormControlInput1" placeholder="name@example.com">
+      
+          </div>
+      
+          <div *ngIf="form.get('username')?.invalid && (form.get('username')?.dirty || form.get('username')?.touched)">
+              <div *ngIf="form.get('username')?.hasError('required')">
+                 <p class="text-red"> email is required</p>
+              </div>
+              
+              </div>
+    
+       <div class="mb-3">
+        
+        <input type="password"  class="visually-hidden" placeholder="Password" class="form-control" formControlName="password1">
+       
+       </div>
+       <div *ngIf="form.get('password1')?.invalid && (form.get('password1')?.dirty || form.get('password1')?.touched)">
+        <div *ngIf="form.get('password1')?.hasError('required')">
+           <p class="text-red"> password is required</p>
+        </div>
+        <div *ngIf="form.get('password1')?.hasError('minlength')">
+            <p class="text-red"> password must be 8 characters</p>
+        </div>
+        </div>
+        <div class="mb-3">
+        
+          <input type="password"  class="visually-hidden" placeholder="Password" class="form-control" formControlName="password1">
+         
+         </div>
+         <div *ngIf="form.get('password1')?.invalid && (form.get('password1')?.dirty || form.get('password1')?.touched)">
+          <div *ngIf="form.get('password1')?.hasError('required')">
+             <p class="text-red"> password is required</p>
+          </div>
+          <div *ngIf="form.get('password1')?.hasError('minlength')">
+              <p class="text-red"> password must be 8 characters</p>
+          </div>
+          </div>
+          <div class="mb-3">
+        
+            <input type="password"  class="visually-hidden" placeholder="Password" class="form-control" formControlName="password1">
+           
+           </div>
+           <div *ngIf="form.get('password1')?.invalid && (form.get('password1')?.dirty || form.get('password1')?.touched)">
+            <div *ngIf="form.get('password1')?.hasError('required')">
+               <p class="text-red"> password is required</p>
+            </div>
+            <div *ngIf="form.get('password1')?.hasError('minlength')">
+                <p class="text-red"> password must be 8 characters</p>
+            </div>
+            </div>
+            <div class="mb-3">
+        
+              <input type="password"  class="visually-hidden" placeholder="Password" class="form-control" formControlName="password1">
+             
+             </div>
+             <div *ngIf="form.get('password1')?.invalid && (form.get('password1')?.dirty || form.get('password1')?.touched)">
+              <div *ngIf="form.get('password1')?.hasError('required')">
+                 <p class="text-red"> password is required</p>
+              </div>
+              <div *ngIf="form.get('password1')?.hasError('minlength')">
+                  <p class="text-red"> password must be 8 characters</p>
+              </div>
+              </div>
+    
+              <button class="btn-head btn-outline-light me-md-2 justify-content-md-center">Singup!</button>
+     
+          
+       
+      
+        
+       
+      </form>
+    
+    </div>
+  </div>
+
+</div>
+
+
+
+
+</html>
