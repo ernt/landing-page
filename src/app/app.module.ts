@@ -30,6 +30,7 @@ import { HttpClientModule } from "@angular/common/http";
     ReactiveFormsModule,
     NgxCaptchaModule,
     HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,23 +1,28 @@
 import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Coctel } from '../model/Coctel';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class CoctelService {
-  API_URI = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?s=';
+  private coctel:Coctel={ id:0,
+    title:'',
+    price:0,
+    category:'',
+    description:'',
+    image:'' }
+  private  API_URI = 'https://fakestoreapi.com/';
   constructor(private http: HttpClient) { }
 
-  getservice(name:string){
-      this.http.get(this.API_URI+name).subscribe(data => {
-        console.log(data);
-      });
+      getAllProducts():Observable<Coctel>{
+      return this.http.get<Coctel>(this.API_URI+"products")
+
     }
 
-  getservices(id: number){
-    return this.http.get(this.API_URI + '/' + id);
-  }
+
 }
 
